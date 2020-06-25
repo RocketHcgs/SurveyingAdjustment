@@ -1,3 +1,4 @@
+% 计算近似方位角
 [xa, ya, xb, yb]=textread('a.txt','%f %f %f %f');
 a0 = atan((yb-ya)./(xb-xa));
 a0 = rad2deg(a0);
