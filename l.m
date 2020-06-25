@@ -4,6 +4,6 @@ Li = dms2degrees([Ld, Lm, Ls]);
 ai = dms2degrees([ad, am, as]);
 bi = dms2degrees([bd, bm, bs]);
 li = -degrees2dms(Li - (ai - bi));
-for i = 1:numel(li)
+for i = 1:numel(li(:,3))
     disp([i,li(i,3)]);
 end
